@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz App</title>
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  text-align: center;
+  padding: 20px;
+  background-color: rgb(228, 250, 170);
+  margin: 10px;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  background-color: #ebeb78;
+  padding: 30px;
+  border-radius: 6px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-style: double;
+  border-color: #003cff;
+  border-radius: 10px;
+  
+}
+
+#quiz {
+  /* display: block; */
+  display: list-item;
+}
+
+#result {
+  display: none;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.button {
+  background-color: #ff2600;
+  color: #e0d5d5;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #8806eb;
+}
+/* #option{
+  color: aqua;
+  background-color: aqua;
+} */
+
+  </style>
+  <!-- <link rel="stylesheet" href="quiz.cs </head> -->
+<body>
+  <div class="container">
+    <div id="quiz">
+      <h1>Quiz App</h1>
+      <div id="question"></div><br><br>
+      <div id="options" style="background-color: #0056b3; display: grid; color: aqua;"></div><br><br>
+     
+      <button id="next-button" class="button" onclick="nextQuestion()">Next</button>
+      <button id="score-button" class="button" onclick="showFinalResult()">Score</button>
+    </div>
+    <div id="result" style="display: none;"></div>
+  </div>
+  <script src="newscript.js"></script>
+</body>
+
